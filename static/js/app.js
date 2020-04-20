@@ -63,7 +63,7 @@ function buildBar (userID) {
     };
     var dataBar = [barTrace];  
     var layoutBar = {
-      title: `Most Common Bacteria for Test Subject ${userID}`
+      title: `Top 10 OTUs`
     };
     Plotly.newPlot("bar", dataBar, layoutBar);
   });
@@ -140,7 +140,7 @@ function buildGauge(userID) {
       {
         domain: { x: [0, 9], y: [0, 1] },
         value: userDemo.wfreq,
-        title: { text: "Washing Frequency" },
+        title: { text: "Belly Button Washing Frequency" },
         type: "indicator",
         mode: "gauge+number",
         gauge: { 
